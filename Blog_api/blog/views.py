@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from Blog_api.blog.serializers import UserSerializer, GroupSerializer
-
+from rest_framework import permissions
 
 class UserViewSet(viewsets.ModelViewSet):
     """
@@ -17,3 +17,17 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
+class LoginView(viewsets.ModelViewSet):
+    """
+    POST auth/login/
+    """
+    # This permission class will overide the global permission
+    # class setting
+    permission_classes = (permissions.AllowAny,)
+
+    queryset = User.objects.all()
+
+    def post(self, request, *args, **kwargs):
+
+        return Response("OK")
