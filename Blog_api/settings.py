@@ -105,7 +105,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'Blog',
-        'HOST': 'mongodb://localhost:27017/Blog',
+        # 'HOST': 'mongodb://127.0.0.1:27017/Blog',
+        'HOST': 'mongo',
         'USER': '',
         'PASSWORD': '',
     }
