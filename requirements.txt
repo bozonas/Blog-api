@@ -4,7 +4,7 @@ colorama==0.4.1
 dataclasses==0.6
 Django==2.2.20
 django-cors-headers==2.5.3
-djangorestframework==3.9.2
+djangorestframework==3.11.2
 djangotoolbox==1.8.0
 djongo==1.2.32
 httpie==1.0.2
