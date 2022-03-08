@@ -7,7 +7,7 @@ django-cors-headers==2.5.3
 djangorestframework==3.11.2
 djangotoolbox==1.8.0
 djongo==1.2.32
-httpie==1.0.2
+httpie==3.1.0
 idna==2.8
 Pygments==2.7.4
 pymongo==3.8.0
